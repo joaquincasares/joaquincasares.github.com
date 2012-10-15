@@ -1,3 +1,7 @@
+---
+title: Joaquin G. Casares' Resume
+---
+
 Joaquin G. Casares
 ------------------
 
