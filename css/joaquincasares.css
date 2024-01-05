@@ -1,0 +1,55 @@
+html {
+    background-color: rgb(15 23 42);
+}
+
+body {
+    color: rgb(148 163 184);
+    background: radial-gradient(1200px at 300px 300px, rgba(29, 78, 216, 0.15), transparent 80%);
+}
+
+a {
+    color: rgb(94, 234, 212);
+}
+
+.h3 {
+    padding-top: 20px;
+    color: rgb(198, 215, 240);
+}
+
+.h5 {
+    padding-top: 16px;
+    color: rgb(94, 234, 212);
+}
+
+.text-light {
+    color: rgb(179, 197, 223) !important;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.art-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.fw-lighter {
+    color: hsl(215 20% 88% / 1);
+}
+
+.no-phrase-break {
+    white-space: nowrap;
+}
