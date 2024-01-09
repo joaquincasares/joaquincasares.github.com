@@ -56,3 +56,29 @@ a {
 .no-phrase-break {
     white-space: nowrap;
 }
+
+.btn-outline-primary {
+    color: rgb(94, 234, 212);
+    border-color: rgb(94, 234, 212);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    /* background-color: rgb(94, 234, 212);
+    border-color: rgb(94, 234, 212);
+    color: black; */
+    background-color: #4E829A;
+    border-color: #4E829A;
+}
+
+.btn-check+.btn:hover {
+    /* color: rgb(94, 234, 212); */
+    color: hsl(215 20% 88% / 1);
+    /* background-color: var(--bs-btn-bg); */
+    /* border-color: rgb(94, 234, 212); */
+    border-color: #4E829A;
+}
+
+.btn:last-child:hover {
+    background-color: #4E829A;
+    border-color: #4E829A;
+}
