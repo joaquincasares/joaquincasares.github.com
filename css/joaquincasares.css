@@ -5,6 +5,7 @@ html {
 body {
     color: rgb(148 163 184);
     background: radial-gradient(1200px at 300px 300px, rgba(29, 78, 216, 0.15), transparent 80%);
+    background-attachment: fixed;
 }
 
 a {
