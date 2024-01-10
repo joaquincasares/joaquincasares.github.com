@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1704927257" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1704927517" rel="stylesheet">
 </head>
 
 <body>
@@ -859,8 +859,8 @@
       $(checkbox).click(function () {
         var className = $(this).attr('id').replace('skill-', '');
         if ($(this).is(':checked')) {
-          $('.row').not('.' + className).find('p:not(.no-filter), .art-frame').hide();
-          $('.row.' + className).find('p:not(.no-filter), .art-frame').show();
+          $('.row').not('.' + className).find('p:not(.no-filter), .art-frame, .badges').hide();
+          $('.row.' + className).find('p:not(.no-filter), .art-frame, .badges').show();
         }
       });
     }
@@ -873,8 +873,8 @@
       var hash = window.location.hash.replace('#', '');
       if ($('#skill-' + hash).length) {
         $('#skill-' + hash).prop('checked', true);
-        $('.row').not('.' + hash).find('p:not(.no-filter), .art-frame').hide();
-        $('.row.' + hash).find('p:not(.no-filter), .art-frame').show();
+        $('.row').not('.' + hash).find('p:not(.no-filter), .art-frame, .badges').hide();
+        $('.row.' + hash).find('p:not(.no-filter), .art-frame, .badges').show();
       }
     }
 
