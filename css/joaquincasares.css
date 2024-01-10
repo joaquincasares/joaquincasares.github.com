@@ -89,3 +89,12 @@ a {
         position:fixed;
     }
 }
+
+.badges {
+    margin-bottom: 1rem;
+}
+
+.rounded-pill {
+    color: rgb(94 234 212/1);
+    background-color: rgba(24,55,86,.9);
+}
