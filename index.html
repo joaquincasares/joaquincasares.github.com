@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1704959273" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1704962578" rel="stylesheet">
 </head>
 
 <body>
@@ -137,7 +137,8 @@
                 Murphy</a> in <a href="https://www.imdb.com/title/tt0086960">Beverly Hills Cop</a>. For several reasons,
               that very specific situation is not possible. My love of film has followed me from my hometown
               cinema, Cinema III,
-              through my double major at <a href="#ut-austin">The University of Texas at Austin</a>, and into the rise of this generation of
+              through my double major at <a href="#ut-austin">The University of Texas at Austin</a>, and into the rise
+              of this generation of
               AR/VR/<a href="#vrxp">360 Video</a> technologies. Now that Generative
               AI is
               making its way into the generative video space, I'm excited to see how this new technology will help shape
@@ -152,7 +153,8 @@
               enjoyed being at small, nimble companies since it feels like every small change is your fault. Whether
               it's a
               mistake or a success, the company is affected because of you. If you need
-              help building something powerful, have a collaborative and intelligent team, and like the experience I could
+              help building something powerful, have a collaborative and intelligent team, and like the experience I
+              could
               bring
               to
               your project, I'd love to chat. <a href="Resume - Joaquin Casares.pdf">Please reach out.</a></p>
@@ -241,10 +243,12 @@
         <div class="row containers visibility blockchain operations architecture">
           <div class="col">
             <p>I then added self-hosted <a
-                href="https://github.com/AudiusProject/audius-protocol/commits/main/monitoring?author=joaquincasares">Prometheus and Grafana</a> dashboards for network, governance, and blockchain
+                href="https://github.com/AudiusProject/audius-protocol/commits/main/monitoring?author=joaquincasares">Prometheus
+                and Grafana</a> dashboards for network, governance, and blockchain
               transaction metrics. I added alerts for various on-chain activities like interactions with our governance
               contract and transactions from treasury wallets. I also created Grafana alerts to deploy
-              reward-slashing <a href="https://dashboard.audius.org/#/governance">governance proposals</a>, via CircleCI pipelines, for service
+              reward-slashing <a href="https://dashboard.audius.org/#/governance">governance proposals</a>, via CircleCI
+              pipelines, for service
               providers who weren't adhering to the upgrade window.</p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 order-first">
@@ -328,7 +332,7 @@
           <a class="text-decoration-none" href="https://thelastpickle.com">The Last Pickle</a>
         </div>
         <div class="h6">(2016 - 2018)</div>
-        <div class="row starred cassandra containers visibility training">
+        <div class="row starred cassandra containers visibility training operations">
           <div class="col">
             <div class="fw-semibold">Consultant</div>
             <p>During periods of low customer engagement at <a href="https://thelastpickle.com/">The Last Pickle</a>, I
@@ -339,7 +343,7 @@
               create Cassandra-centric dashboards that could be used across their teams. A coworker and I delivered
               domain-specific dashboards separated into clearly labeled rows containing full runbooks in all important
               panels'
-              tooltips and preconfigured alerts with detailed resolution guides with matching threshold explanations in
+              tooltips. We also configured alerts with detailed resolution guides and matching threshold explanations in
               each
               alert message. These <a
                 href="https://github.com/thelastpickle/docker-cassandra-bootstrap/tree/master/grafana/dashboards">dashboards</a>
@@ -361,8 +365,7 @@
               dashboards, which I <a href="https://www.youtube.com/watch?v=BwB0iaNoEeo">presented during DataDog Summit
                 2017</a>. My coworker, Alain Rodriquez, published a <a
                 href="https://www.datadoghq.com/blog/tlp-cassandra-dashboards/">blog post</a> on DataDog's blog shortly
-              after announcing the dashboards we worked
-              on.</p>
+              after the summit to announce the dashboards we worked on.</p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 order-first">
             <img class="art w-100" src="imgs/tlp-datadog.jpg">
@@ -370,7 +373,7 @@
           <div class="col-12 order-last badges"></div>
         </div>
         <a id="800-nodes"></a>
-        <div class="row starred cassandra operations">
+        <div class="row starred architecture cassandra operations visibility training">
           <div class="col">
             <p>During an engagement with a new inbound customer late on a Thursday, I diagnosed
               and repaired an 800-node multi-region database cluster experiencing split-brain networking issues where
@@ -383,7 +386,8 @@
               began
               upgrading off JDK 1.7.0, synced NTP clocks with the same time server pool, and set alerts for duplicate
               schemas.
-              Over three months, we delivered heavily detailed usage and operations runbooks and helped them implement
+              Over three months, we delivered heavily detailed usage, data model, and operations runbooks and helped
+              them implement
               most
               solutions. These runbooks contained debugging guides, indicators of potential high load scenarios, ideal
               metric
@@ -401,17 +405,17 @@
           </div>
           <div class="col-12 order-last badges"></div>
         </div>
-        <div class="row starred cassandra python application-development operations visibility">
+        <div class="row starred cassandra python application-development operations visibility training">
           <div class="col">
             <p>After repeatedly asking for the same information across customers of various
               cluster sizes, I began automating my metrics collections using a simple script. This script was then
               productized
-              as the goto method for collecting diagnostics for any new clients as well as a snapshot when current
-              clients
-              were experiencing issues and before major operational changes. A companion script was quickly added to
+              as the goto method for collecting diagnostics for any new clients. It was soon used as a snapshot when our
+              customers were experiencing issues and before making major operational changes. A companion script was
+              quickly added to
               automate
               the markdown generation of most runbook sections, including extracted values, command line output
-              snippets, and
+              snippets, templatized data modelng sections, and
               personalized sections depending on cluster health. The collection script and diagnostics generator were
               productized at The Last Pickle and transferred to DataStax after they acqui-hired the team. This tooling
               is
@@ -422,10 +426,10 @@
           </div>
           <div class="col-12 order-last badges"></div>
         </div>
-        <div class="row cassandra">
+        <div class="row cassandra operations visibility training">
           <div class="col">
             <p>I also contributed to Sandwich, an internal project that used Apache Cassandra,
-              Apache Kafka, Amazon Lambda, and upgraded versions of my templatized runbooks to quickly analyze Cassandra
+              Apache Kafka, AWS Lambda, and upgraded versions of my templatized runbooks to quickly analyze Cassandra
               clusters and deliver personalized runbooks to customers ahead of the most common potential issues.
               Unfortunately, work on this product was not continued after the acquisition.</p>
           </div>
@@ -439,7 +443,7 @@
             <p>The Last Pickle was comprised of a global team of 13 based out of New Zealand with
               consultants in Australia, France, the Canary Islands, Austin, Denver, and California, I quickly learned
               how to
-              be an effective team member across the International Date Line while being their first engineer within the
+              be an effective team member across the International Date Line since I was the first engineer within the
               US
               time zones. Locally, I continued to be involved in the Cassandra community by attending and <a
                 href="https://www.slideshare.net/joaquincasares/joining-a-p2p-conversation-201706-meetup-77091413">presenting</a>
@@ -539,7 +543,7 @@
         </div>
         <div class="row cassandra python application-development operations visibility">
           <div class="col">
-            <p>To meet these demands of being the primary support contact for nine months as my
+            <p>To meet the demands of being the primary support contact for nine months as my
               manager was primarily at on-site engagements, I created internal automation, <a
                 href="https://github.com/joaquincasares/zendesk_downloader">command-line tools to download, extract, and
                 organize diagnostic logs and
@@ -553,7 +557,7 @@
           </div>
           <div class="col-12 order-last badges"></div>
         </div>
-        <div class="row starred cassandra training">
+        <div class="row starred cassandra training operations visibility">
           <div class="col">
             <p>After owning DataStax Support for nine months, I trained 5 of the 6-person team, including the
               new manager, who were hired to replace me within the remote-first company. The knowledge base,
@@ -724,7 +728,8 @@
                 printing system</a>, and other development containers and smaller scripts for things
               like
               running Cassandra and
-              <a href="https://github.com/joaquincasares/luks-decrypt">decrypting luks encrypted volumes</a>.</p>
+              <a href="https://github.com/joaquincasares/luks-decrypt">decrypting luks encrypted volumes</a>.
+            </p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 py-5 py-md-1 order-first">
             <img class="art w-100" src="imgs/linux-containers.jpg">
@@ -758,7 +763,8 @@
                 Amplifier</a> powers <a
                 href="https://www.akg.com/Headphones/Professional%20Headphones/K240MKII.html">AKG 240MKII</a>
               (semi-open) and <a href="https://www.akg.com/Headphones/Professional%20Headphones/K702.html">AKG K702</a>
-              (fully-open, reference) headphones for immersive cinematic viewing with a warm soundstage and full lows. I purchased all the
+              (fully-open, reference) headphones for immersive cinematic viewing with a warm soundstage and full lows. I
+              purchased all the
               equipment over five years through <a href="https://slickdeals.net/">Slickdeals</a> steals. My home cinema
               is lovingly called Cinema I, a throwback to my
               hometown's quaint Cinema III which contained three screens and housed many of my best childhood memories.
