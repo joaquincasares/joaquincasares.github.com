@@ -98,3 +98,11 @@ a {
     color: rgb(94 234 212/1);
     background-color: rgba(24,55,86,.9);
 }
+
+@media (min-width: 1200px) {
+    .pe-xl-6 {
+        padding-right: 14rem!important;
+        max-width: 750px;
+        min-width: 600px;
+    }
+}
