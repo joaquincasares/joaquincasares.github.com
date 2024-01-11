@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1704928180" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1704932488" rel="stylesheet">
 </head>
 
 <body>
@@ -105,7 +105,6 @@
               enjoyed the challenges that distributed systems at scale face.
             </p>
           </div>
-          <div class="col-12 order-last badges"></div>
         </div>
         <div class="row blockchain">
           <div class="col">
@@ -131,7 +130,6 @@
               Solana, and POA blockchains
             </p>
           </div>
-          <div class="col-12 order-last badges"></div>
         </div>
         <div class="row film">
           <div class="col">
@@ -148,7 +146,6 @@
               ideas
               into releasable content.</p>
           </div>
-          <div class="col-12 order-last badges"></div>
         </div>
         <div class="row no-filter">
           <div class="col">
@@ -161,7 +158,6 @@
               to
               your project, I'd love to chat. <a href="Resume - Joaquin Casares.pdf">Please reach out.</a></p>
           </div>
-          <div class="col-12 order-last badges"></div>
         </div>
 
         <div class="h3">Experience</div>
@@ -727,7 +723,9 @@
               for <a href="https://www.home-assistant.io/">Home Assistant</a>, <a
                 href="https://www.rocket.chat/">Rocket.Chat</a>, <a href="https://en.wikipedia.org/wiki/CUPS">CUPS
                 printing system</a>, and other development containers and smaller scripts for things
-              like <a href="https://github.com/joaquincasares/luks-decrypt">decrypting luks encrypted volumes</a>.</p>
+              like
+              running Cassandra and
+              <a href="https://github.com/joaquincasares/luks-decrypt">decrypting luks encrypted volumes</a>.</p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 py-5 py-md-1 order-first">
             <img class="art w-100" src="imgs/linux-containers.jpg">
@@ -751,7 +749,7 @@
           <div class="col">
             <p>Both are projected via an <a
                 href="https://epson.com/Clearance-Center/Projectors-for-Work/Pro-G7400U-WUXGA-3LCD-Projector-w-4K-Enhancement-%26-Standard-Lens/p/V11H762020">Epson
-                Pro G7400U</a> with 3LCD and e4k technology and an aftermarket <a
+                Pro G7400U</a>, with 3LCD and e4k technology, and an aftermarket <a
                 href="https://epson.com/Accessories/Projector-Accessories/Short-Throw-%232-Zoom-Lens-%28ELPLU04%29/p/V12H004U04">Short
                 Throw Zoom Lens</a> to fill as much of the 10'x8' screen as possible. Audio is provided via
               in-wall wiring by the <a
@@ -761,7 +759,7 @@
                 Amplifier</a> powers <a
                 href="https://www.akg.com/Headphones/Professional%20Headphones/K240MKII.html">AKG 240MKII</a>
               (semi-open) and <a href="https://www.akg.com/Headphones/Professional%20Headphones/K702.html">AKG K702</a>
-              (fully-open, reference) headphones for immersive viewing. I purchased all the
+              (fully-open, reference) headphones for immersive cinematic viewing with a warm soundstage and full lows. I purchased all the
               equipment over five years through <a href="https://slickdeals.net/">Slickdeals</a> steals. My home cinema
               is lovingly called Cinema I, a throwback to my
               hometown's quaint Cinema III which contained three screens and housed many of my best childhood memories.
@@ -942,7 +940,8 @@
         console.log($(this).attr('class').split(/\s+/));
         var classes = $(this).attr('class').split(/\s+/);
         var currentRow = $(this);
-        classes.forEach(function (className, row) {
+        classes.sort()
+        classes.forEach(function (className) {
           if (className !== 'row' && skills.includes(className)) {
             className = className.replace('skill-', '').replace('-', ' ');
             className = titleCase(className);
