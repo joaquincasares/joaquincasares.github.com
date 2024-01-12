@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1705026187" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1705026850" rel="stylesheet">
 </head>
 
 <body>
@@ -901,7 +901,10 @@
 
     // This code will run after the page has fully loaded
     function addOrderMdLastToEvenArtFrames(hash) {
-      const artFrames = $('.row.' + hash).find('.art-frame');
+      if (hash) {
+        hash = '.' + hash;
+      }
+      const artFrames = $('.row' + hash).find('.art-frame');
 
       // Iterate through the art-frames and add the class .order-md-last to even instances
       artFrames.each(function (index) {
@@ -930,6 +933,7 @@
         // Show all p and art-frame elements within .row divs
         $('.row').find('p, .art-frame, .badges').show();
         $('.btn-group .btn-check').prop('checked', false);
+        addOrderMdLastToEvenArtFrames('');
       });
 
       // Function to change the hash in the URL
