@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1705024931" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1705026187" rel="stylesheet">
 </head>
 
 <body>
@@ -873,19 +873,25 @@
           $('.row').not('.' + className).find('p:not(.no-filter), .art-frame, .badges').hide();
           $('.row.' + className).find('p:not(.no-filter), .art-frame, .badges').show();
         }
+        addOrderMdLastToEvenArtFrames(className);
       });
     }
 
     function removeHash() {
       history.pushState("", document.title, window.location.pathname + window.location.search);
     }
-    // Function to check the checkbox based on the URL hash
-    function reapplyFiltersUsingLocationHash() {
+
+    function getHash() {
       var hash = window.location.hash;
       if (!(window.location.hash)) {
         hash = 'starred';
       }
-      hash = hash.replace('#', '');
+      return hash.replace('#', '');
+    }
+
+    // Function to check the checkbox based on the URL hash
+    function reapplyFiltersUsingLocationHash() {
+      var hash = getHash();
       if ($('#skill-' + hash).length) {
         $('#skill-' + hash).prop('checked', true);
         $('.row').not('.' + hash).find('p:not(.no-filter), .art-frame, .badges').hide();
@@ -893,22 +899,23 @@
       }
     }
 
+    // This code will run after the page has fully loaded
+    function addOrderMdLastToEvenArtFrames(hash) {
+      const artFrames = $('.row.' + hash).find('.art-frame');
+
+      // Iterate through the art-frames and add the class .order-md-last to even instances
+      artFrames.each(function (index) {
+        if (index % 2 === 1) { // Check if the index is even (0-based index)
+          $(this).addClass('order-md-last');
+        } else {
+          $(this).removeClass('order-md-last');
+        }
+      });
+    }
+
     $(document).ready(function () {
-      // This code will run after the page has fully loaded
-      function addOrderMdLastToEvenArtFrames() {
-        // Get all elements with the class .art-frame
-        const artFrames = $('.art-frame');
-
-        // Iterate through the art-frames and add the class .order-md-last to even instances
-        artFrames.each(function (index) {
-          if (index % 2 === 1) { // Check if the index is even (0-based index)
-            $(this).addClass('order-md-last');
-          }
-        });
-      }
-
       // Call the function to apply the class
-      addOrderMdLastToEvenArtFrames();
+      addOrderMdLastToEvenArtFrames(getHash());
 
       // Open all links as a new page
       $('a:not([href^="#"])').attr('target', '_blank');
