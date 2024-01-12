@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1705026850" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1705050222" rel="stylesheet">
 </head>
 
 <body>
@@ -84,9 +84,11 @@
 
           <input type="radio" class="btn-check" name="btn-check" id="skill-film" autocomplete="off">
           <label class="btn btn-outline-primary" for="skill-film">Film</label>
-
+        </div>
+        <div class="btn-group flex-wrap w-100" role="group"
+          aria-label="Skills checkbox toggle button group">
           <input type="checkbox" class="btn-check" id="clear-filter" autocomplete="off">
-          <label class="btn btn-outline-primary" for="clear-filter">Clear</label>
+          <label class="btn btn-outline-primary" for="clear-filter">Clear Filter</label>
         </div>
         <div class="btn-group flex-wrap w-100 d-none d-lg-flex" role="group"
           aria-label="Skills checkbox toggle button group">
@@ -99,7 +101,7 @@
         <div class="h3">About</div>
         <div class="row starred cassandra application-development operations python containers visibility training">
           <div class="col">
-            <p>On the third day of my career, I was helping Netflix restart their servers as <a
+            <p>On the third day of my career, I was helping Netflix restart their Apache Cassandra cluster as <a
                 href="#datastax">employee #9</a> of a geo-distributed company that grew to 440 employees 4.5 years
               later.
               Later in my career, I helped
@@ -175,7 +177,7 @@
           <a class="text-decoration-none" href="https://axonops.com">AxonOps</a>
         </div>
         <div class="h6">(2023 - Present)</div>
-        <div class="row starred cassandra visibility training operations">
+        <div class="row starred cassandra visibility training operations film">
           <div class="col">
             <div class="fw-semibold">Consultant</div>
             <p>I was hired as a consultant for <a href="https://axonops.com/">AxonOps</a> to performance
@@ -187,6 +189,9 @@
               and
               provided
               booth support at the 2-day summit.
+            </p>
+            <p>
+              Follow up blog posts and videowork to follow.
             </p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 order-first">
@@ -207,7 +212,10 @@
               through <a
                 href="https://github.com/AudiusProject/audius-protocol/commits/main/discovery-provider/src?author=joaquincasares">various
                 improvements</a> on the discovery nodes, which provide blockchain indexing and search
-              functionality to the network, apps, and <a href="https://audius.co/">website</a>. The <a
+              functionality to the network, apps, and <a href="https://audius.co/">website</a>.
+            </p>
+            <p>
+              The <a
                 href="https://dashboard.audius.org/#/services">119-node network</a> hosted by 23 public service
               providers serviced <a href="https://dashboard.audius.org/#/analytics">283M+ requests and 5M+ unique users
                 monthly</a>. Additionally, I heavily contributed to the <a
@@ -238,7 +246,10 @@
             <p>The next effort was to add visibility to the project by adding centralized logging
               and metrics. Since a few alerts existed in Pingdom, we began with the centralized logging project to
               reduce the
-              need for production access. I quickly set up <a
+              need for production access.
+            </p>
+            <p>
+              I quickly set up <a
                 href="https://github.com/AudiusProject/audius-protocol/pull/3297/files">centralized logging</a> with
               ElasticSearch, Metricbeat/Filebeat, and Kibana hosted by Elastic Cloud
               for development, staging, and production docker containers.</p>
@@ -254,7 +265,10 @@
                 href="https://github.com/AudiusProject/audius-protocol/commits/main/monitoring?author=joaquincasares">Prometheus
                 and Grafana</a> dashboards for network, governance, and blockchain
               transaction metrics. I added alerts for various on-chain activities like interactions with our governance
-              contract and transactions from treasury wallets. I also created Grafana alerts to deploy
+              contract and transactions from treasury wallets.
+            </p>
+            <p>
+              I also created Grafana alerts to deploy
               reward-slashing <a href="https://dashboard.audius.org/#/governance">governance proposals</a>, via CircleCI
               pipelines, for service
               providers who weren't adhering to the upgrade window.</p>
@@ -272,7 +286,10 @@
               was a registration
               system designed to allow developers to reserve properly tagged instances within the Staging environment
               without
-              fear of the release pipelines interacting with reserved nodes. The last steps in the release process
+              fear of the release pipelines interacting with reserved nodes.
+            </p>
+            <p>
+              The last steps in the release process
               included
               automated <a href="https://dashboard.audius.org/#/governance">smart contract</a> creation and
               post-timelock execution, as well as Discord and Slack
@@ -295,12 +312,18 @@
               eBay and primarily
               based in Barcelona, Spain. I was hired by the former Director of Security at Umbel to ensure the databases
               could
-              scale to meet the seasonal needs of their incoming enterprise-level customers. I worked on the Inventory
+              scale to meet the seasonal needs of their incoming enterprise-level customers.
+            </p>
+            <p>
+              I worked on the Inventory
               Service, which was being rewritten into Golang microservices while the PHP monolith's inventory service
               was in
               maintenance mode. Shortly after becoming comfortable with Golang and three months before Black Friday, our
               DevOps team member in Barcelona gave a 30-day notice before transferring to a different department in the
-              US. In
+              US.
+            </p>
+            <p>
+              In
               under a month of remotely shadowing my team member in his local time zone, I quickly got up to speed on
               GitOps
               methodologies and Kubernetes release management for staging, pre-production, and multi-region production
@@ -318,14 +341,20 @@
             <p>As we were getting close to our beta release of the new Inventory Service, Adobe
               announced its latest offering, Adobe Commerce. Adobe Commerce would be written from scratch in Java
               following
-              Adobe's company-wide infrastructure policies. For the rest of my tenure at Adobe, I created a
+              Adobe's company-wide infrastructure policies.
+            </p>
+            <p>
+              For the rest of my tenure at Adobe, I created a
               comprehensive wiki
               for the Sourcing Engine and Configuration System as we transitioned ownership to contractors in India
               tasked
               with sunsetting the platform. The wiki included complete documentation of technical processes,
               troubleshooting
               steps, and the new release management orchestration I redesigned to simplify the documentation and
-              handover. Our
+              handover.
+            </p>
+            <p>
+              Our
               team was the first out of five to entirely hand over our project due to our robust test cases, organized
               logic,
               and active use of a wiki, even though we only shared a 3-hour workday overlap.</p>
@@ -348,7 +377,10 @@
               details and alert resolution were common across Developer teams and the broader Infrastructure team. When
               T-Mobile chose an org-level Grafana instance to monitor their applications and infrastructure, they asked
               TLP to
-              create Cassandra-centric dashboards that could be used across their teams. A coworker and I delivered
+              create Cassandra-centric dashboards that could be used across their teams.
+            </p>
+            <p>
+              A coworker and I delivered
               domain-specific dashboards separated into clearly labeled rows containing full runbooks in all important
               panels'
               tooltips. We also configured alerts with detailed resolution guides and matching threshold explanations in
@@ -388,12 +420,16 @@
               about
               five versions of the schema were simultaneously live causing a percentage of failed read and write
               requests.
+            </p>
+            <p>
               After the CEO and Principal Architect diagnosed their issues for the better half of an afternoon and got
               ready
               to sign off, I joined and took the lead on the call. Within 30 minutes of listening to their symptoms, we
               began
               upgrading off JDK 1.7.0, synced NTP clocks with the same time server pool, and set alerts for duplicate
-              schemas.
+              schemas, resolving their issue in time for a slow rollout over the weekend.
+            </p>
+            <p>
               Over three months, we delivered heavily detailed usage, data model, and operations runbooks and helped
               them implement
               most
@@ -419,12 +455,18 @@
               cluster sizes, I began automating my metrics collections using a simple script. This script was then
               productized
               as the goto method for collecting diagnostics for any new clients. It was soon used as a snapshot when our
-              customers were experiencing issues and before making major operational changes. A companion script was
+              customers were experiencing issues and before making major operational changes.
+            </p>
+            <p>
+              A companion script was
               quickly added to
               automate
               the markdown generation of most runbook sections, including extracted values, command line output
               snippets, templatized data modelng sections, and
-              personalized sections depending on cluster health. The collection script and diagnostics generator were
+              personalized sections depending on cluster health.
+            </p>
+            <p>
+              The collection script and diagnostics generator were
               productized at The Last Pickle and transferred to DataStax after they acqui-hired the team. This tooling
               is
               still used by the Support team at DataStax in 2024.</p>
@@ -453,7 +495,10 @@
               how to
               be an effective team member across the International Date Line since I was the first engineer within the
               US
-              time zones. Locally, I continued to be involved in the Cassandra community by attending and <a
+              time zones.
+            </p>
+            <p>
+              Locally, I continued to be involved in the Cassandra community by attending and <a
                 href="https://www.slideshare.net/joaquincasares/joining-a-p2p-conversation-201706-meetup-77091413">presenting</a>
               at Meetups, contributing <a href="https://github.com/datastax/python-driver/pull/990">asynchronous request
                 pipelines</a> to the DataStax Python Driver for Apache Cassandra, speaking at DataDay 2018,
@@ -480,10 +525,16 @@
               developed
               an asynchronous API written in Python which relied on Apache Cassandra, Amazon DynamoDB, and PostgreSQL
               that
-              increased processing speed by more than 3x while reducing costs by 50%. By the completion of the project,
+              increased processing speed by more than 3x while reducing costs by 50%.
+            </p>
+            <p>
+              By the completion of the project,
               hourly
               jobs were completed in under 18 minutes at half the cost with reliable data replication and transparent
-              denormalization. These optimizations were made possible due to an asynchronous data object that handles
+              denormalization.
+            </p>
+            <p>
+              These optimizations were made possible due to an asynchronous data object that handles
               denormalization, client-side retries, metrics, hydration, and transactions. The design heavily
               followed <a href="https://www.youtube.com/watch?v=VIC7QW62-Tw">Volatility-based Decomposition</a> planning
               and borrowed from <a href="https://martinfowler.com/articles/microservices.html">Microservice</a>, <a
@@ -533,10 +584,16 @@
                 Machine Images</a> (<a
                 href="https://github.com/riptano/ComboAMI/commits/2.6?author=joaquincasares">AMIs</a>), and using tools
               like the <a href="https://github.com/joaquincasares/cassandralauncher">Cassandra Launcher</a> which has
-              upwards of 117k downloads on PyPI. In addition to Meetups, I've
+              upwards of 117k downloads on PyPI.
+            </p>
+            <p>
+              In addition to Meetups, I've
               given <a href="https://www.youtube.com/watch?v=Ykf_C9RZEQI&amp;t=2159s">lightning talks</a> at Cassandra
               Summits, presented at Data Day Texas, and answered questions on
-              DataStax Support Forums, Planet Cassandra, and Freenode. My blog posts on <a
+              DataStax Support Forums, Planet Cassandra, and Freenode.
+            </p>
+            <p>
+              My blog posts on <a
                 href="https://www.datastax.com/blog/multi-datacenter-replication-cassandra">multi-datacenter replication
                 (2012)</a> and <a href="https://www.datastax.com/blog/get-ring-cassandra-and-ec2">running Cassandra on
                 EC2 (2014)</a> are still live in 2024 due to the amount of traffic they continue to
@@ -601,7 +658,10 @@
               pain points that large corporations and financial institutions were experiencing with data storage and
               request
               throughputs at scale. I then turned these real-world scenarios into easy-to-understand marketing demos to
-              showcase at conferences, including Azure's first tech conference, and through developer blog posts. As a
+              showcase at conferences, including Azure's first tech conference, and through developer blog posts.
+            </p>
+            <p>
+              As a
               team,
               we could iterate on the overall objective of each new project quickly and I would be left to complete the
               project as they continued their heavy on-site schedules.</p>
@@ -617,7 +677,10 @@
                 href="https://github.com/datastax-demos/cornerstone">full-stack demo, operational training, and
                 certification
                 platform</a> built with Python, Flask, Jinja2, Bootstrap, and Docker to run on EC2 and
-              Azure instances. Together with a colleague from the Training team, we administered DataStax Certified
+              Azure instances.
+            </p>
+            <p>
+              Together with a colleague from the Training team, we administered DataStax Certified
               Partners
               training sessions using different parts of the platform
               for the course materials and class projects.</p>
@@ -656,7 +719,10 @@
           <div class="col">
             <p>I was accepted into the Communications school at the <a href="https://moody.utexas.edu/">Moody College of
                 Communication</a> and followed a post-production leaning in the <a
-                href="https://rtf.utexas.edu/">Radio-Television-Film</a> degree plan. I was officially a <a
+                href="https://rtf.utexas.edu/">Radio-Television-Film</a> degree plan.
+              </p>
+              <p>
+                I was officially a <a
                 href="https://www.cs.utexas.edu/">Computer Science</a> major in my third year after being turned away by
               the <a href="https://cns.utexas.edu/">College of Natural Sciences</a> registrar's office who advised me
               that being registered as a double major
@@ -680,7 +746,10 @@
                 href="https://www.media.mit.edu/">MIT Media Lab</a>. <a
                 href="https://en.wikipedia.org/wiki/Sandy_Stone_(artist)">Sandy Stone's</a> program was born in Austin
               in 1993 and hosted the most active web server in
-              Texas during the early days of the Internet. The program continued to explore audio/visual projects on
+              Texas during the early days of the Internet.
+            </p>
+            <p>
+              The program continued to explore audio/visual projects on
               various
               topics until it spun out of the University of Texas at Austin in 2014 into an academic community network
               across
@@ -718,7 +787,7 @@
               using <a href="https://www.blender.org/">Blender</a> 2.42. Since then, I've produced a few animations,
               some <a href="https://legalanimationconsulting.com/#our-work">publicly available</a>. While the animations
               are court-ready, my high-impact visual graphics help present
-              complex information clearly and memorably, leading to quicker resolutions and higher settlement amounts,
+              complex information clearly and memorably, leading to quicker resolutions and higher settlement amounts during mediation,
               allowing all parties involved to move on from the traumatic event.</p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 py-5 py-md-1 order-first">
@@ -763,7 +832,10 @@
                 href="https://epson.com/Clearance-Center/Projectors-for-Work/Pro-G7400U-WUXGA-3LCD-Projector-w-4K-Enhancement-%26-Standard-Lens/p/V11H762020">Epson
                 Pro G7400U</a>, with 3LCD and e4k technology, and an aftermarket <a
                 href="https://epson.com/Accessories/Projector-Accessories/Short-Throw-%232-Zoom-Lens-%28ELPLU04%29/p/V12H004U04">Short
-                Throw Zoom Lens</a> to fill as much of the 10'x8' screen as possible. Audio is provided via
+                Throw Zoom Lens</a> to fill as much of the 10'x8' screen as possible.
+              </p>
+              <p>
+                Audio is provided via
               in-wall wiring by the <a
                 href="https://www.logitech.com/en-us/products/speakers/z906-surround-sound-system.980-000467.html">Logitech
                 z906 5.1 Surround Sound Speaker System</a> that is THX, Dolby Digital, and DTS certified. A <a
@@ -771,7 +843,10 @@
                 Amplifier</a> powers <a
                 href="https://www.akg.com/Headphones/Professional%20Headphones/K240MKII.html">AKG 240MKII</a>
               (semi-open) and <a href="https://www.akg.com/Headphones/Professional%20Headphones/K702.html">AKG K702</a>
-              (fully-open, reference) headphones for immersive cinematic viewing with a warm soundstage and full lows. I
+              (fully-open, reference) headphones for immersive cinematic viewing with a warm soundstage and full lows.
+            </p>
+            <p>
+              I
               purchased all the
               equipment over five years through <a href="https://slickdeals.net/">Slickdeals</a> steals. My home cinema
               is lovingly called Cinema I, a throwback to my
@@ -823,7 +898,10 @@
               video, a <a
                 href="https://shop.panasonic.com/products/g85-mirrorless-camera-12-60mm-f3-5-5-6-lens">Panasonic LUMIX
                 G85</a> camera which shoots 4K video, and an array of audio/video production
-              equipment purchased through <a href="https://slickdeals.net/">Slickdeals</a> at discounted prices. While I
+              equipment purchased through <a href="https://slickdeals.net/">Slickdeals</a> at discounted prices.
+            </p>
+            <p>
+              While I
               have a few ideas for individual scenes, I've
               yet to find a story compelling enough to tell. I have the bulk of the equipment ready to go and keep an
               eye on
