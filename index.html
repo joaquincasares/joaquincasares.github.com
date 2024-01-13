@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1705050222" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1705123078" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
   </script>
   <div class="container text-center py-lg-4 mb-lg-4 pb-5">
     <div class="row text-start pt-lg-4 mt-lg-4">
-      <div class="col-lg-4 py-5 pe-lg-5 pe-xl-6 position-lg-fixed">
+      <div class="col-lg-4 py-5 pe-lg-5 pe-xl-6 position-lg-fixed z-index-1">
         <div class="h1">Joaquin Casares</div>
         <div class="h5 text-light">Senior Software Engineer</div>
         <div class="h6">Over a decade of experience with high-throughput, distributed systems within cloud environments.
@@ -49,7 +49,7 @@
 
         <div class="h3">Skills</div>
         <div class="h6 pb-2">
-            Filter bio by skillset or industry.
+          Filter bio by skillset or industry.
         </div>
         <div class="btn-group flex-wrap" role="group" aria-label="Skills checkbox toggle button group">
           <input type="radio" class="btn-check" name="btn-check" id="skill-starred" autocomplete="off">
@@ -85,8 +85,7 @@
           <input type="radio" class="btn-check" name="btn-check" id="skill-film" autocomplete="off">
           <label class="btn btn-outline-primary" for="skill-film">Film</label>
         </div>
-        <div class="btn-group flex-wrap w-100" role="group"
-          aria-label="Skills checkbox toggle button group">
+        <div class="btn-group flex-wrap w-100" role="group" aria-label="Skills checkbox toggle button group">
           <input type="checkbox" class="btn-check" id="clear-filter" autocomplete="off">
           <label class="btn btn-outline-primary" for="clear-filter">Clear Filter</label>
         </div>
@@ -97,7 +96,7 @@
           </a>
         </div>
       </div>
-      <div class="col offset-lg-5">
+      <div class="col offset-lg-5 z-index-2">
         <div class="h3">About</div>
         <div class="row starred cassandra application-development operations python containers visibility training">
           <div class="col">
@@ -215,8 +214,7 @@
               functionality to the network, apps, and <a href="https://audius.co/">website</a>.
             </p>
             <p>
-              The <a
-                href="https://dashboard.audius.org/#/services">119-node network</a> hosted by 23 public service
+              The <a href="https://dashboard.audius.org/#/services">119-node network</a> hosted by 23 public service
               providers serviced <a href="https://dashboard.audius.org/#/analytics">283M+ requests and 5M+ unique users
                 monthly</a>. Additionally, I heavily contributed to the <a
                 href="https://github.com/AudiusProject/audius-docker-compose/commits?author=joaquincasares">Docker
@@ -249,8 +247,8 @@
               need for production access.
             </p>
             <p>
-              I quickly set up <a
-                href="https://github.com/AudiusProject/audius-protocol/pull/3297/files">centralized logging</a> with
+              I quickly set up <a href="https://github.com/AudiusProject/audius-protocol/pull/3297/files">centralized
+                logging</a> with
               ElasticSearch, Metricbeat/Filebeat, and Kibana hosted by Elastic Cloud
               for development, staging, and production docker containers.</p>
           </div>
@@ -720,10 +718,10 @@
             <p>I was accepted into the Communications school at the <a href="https://moody.utexas.edu/">Moody College of
                 Communication</a> and followed a post-production leaning in the <a
                 href="https://rtf.utexas.edu/">Radio-Television-Film</a> degree plan.
-              </p>
-              <p>
-                I was officially a <a
-                href="https://www.cs.utexas.edu/">Computer Science</a> major in my third year after being turned away by
+            </p>
+            <p>
+              I was officially a <a href="https://www.cs.utexas.edu/">Computer Science</a> major in my third year after
+              being turned away by
               the <a href="https://cns.utexas.edu/">College of Natural Sciences</a> registrar's office who advised me
               that being registered as a double major
               would raise my tuition. Since I was following the <a
@@ -787,7 +785,8 @@
               using <a href="https://www.blender.org/">Blender</a> 2.42. Since then, I've produced a few animations,
               some <a href="https://legalanimationconsulting.com/#our-work">publicly available</a>. While the animations
               are court-ready, my high-impact visual graphics help present
-              complex information clearly and memorably, leading to quicker resolutions and higher settlement amounts during mediation,
+              complex information clearly and memorably, leading to quicker resolutions and higher settlement amounts
+              during mediation,
               allowing all parties involved to move on from the traumatic event.</p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 py-5 py-md-1 order-first">
@@ -833,9 +832,9 @@
                 Pro G7400U</a>, with 3LCD and e4k technology, and an aftermarket <a
                 href="https://epson.com/Accessories/Projector-Accessories/Short-Throw-%232-Zoom-Lens-%28ELPLU04%29/p/V12H004U04">Short
                 Throw Zoom Lens</a> to fill as much of the 10'x8' screen as possible.
-              </p>
-              <p>
-                Audio is provided via
+            </p>
+            <p>
+              Audio is provided via
               in-wall wiring by the <a
                 href="https://www.logitech.com/en-us/products/speakers/z906-surround-sound-system.980-000467.html">Logitech
                 z906 5.1 Surround Sound Speaker System</a> that is THX, Dolby Digital, and DTS certified. A <a
@@ -931,6 +930,10 @@
           </div>
           <div class="col-12 order-last badges"></div>
         </div>
+        <div class="d-lg-none no-filter clear-filter-info py-5">
+          Click here to
+          <a class="clear-filter" href="#clear-filter">Clear Filter</a>.
+        </div>
       </div>
     </div>
   </div>
@@ -952,6 +955,7 @@
           $('.row.' + className).find('p:not(.no-filter), .art-frame, .badges').show();
         }
         addOrderMdLastToEvenArtFrames(className);
+        $('.clear-filter-info').show();
       });
     }
 
@@ -1007,9 +1011,10 @@
       });
 
       // Event handler for the Clear Filter button
-      $('#clear-filter').click(function () {
+      $('#clear-filter, .clear-filter').click(function () {
         // Show all p and art-frame elements within .row divs
         $('.row').find('p, .art-frame, .badges').show();
+        $('.clear-filter-info').hide();
         $('.btn-group .btn-check').prop('checked', false);
         addOrderMdLastToEvenArtFrames('');
       });
