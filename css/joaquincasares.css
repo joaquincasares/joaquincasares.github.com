@@ -114,3 +114,13 @@ a {
 .z-index-2 {
     z-index: 2;
 }
+
+::selection {
+    color: rgb(15 23 42);
+    background-color: rgb(69, 173, 158);
+}
+
+::-moz-selection {
+    color: rgb(15 23 42);
+    background-color: rgb(69, 173, 158);
+}
