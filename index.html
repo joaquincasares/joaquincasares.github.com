@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="css/joaquincasares.css?v=1707123381" rel="stylesheet">
+  <link href="css/joaquincasares.css?v=1707125208" rel="stylesheet">
 </head>
 
 <body>
@@ -989,10 +989,22 @@
     // Function to check the checkbox based on the URL hash
     function reapplyFiltersUsingLocationHash() {
       var hash = getHash();
+      var quicklink;
+      if (['i3'].includes(hash)) {
+        quicklink = hash;
+        $('.clear-filter')[0].click();
+        hash = 'clear-filter'
+      }
       if ($('#skill-' + hash).length) {
         $('#skill-' + hash).prop('checked', true);
         $('.row').not('.' + hash).find('p:not(.no-filter), .art-frame, .badges').hide();
         $('.row.' + hash).find('p:not(.no-filter), .art-frame, .badges').show();
+      }
+      if (hash == 'clear-filter') {
+        $('.clear-filter-info').hide();
+      }
+      if (quicklink) {
+        window.location.replace('#' + quicklink);
       }
     }
 
@@ -1026,12 +1038,19 @@
       });
 
       // Event handler for the Clear Filter button
-      $('#clear-filter, .clear-filter').click(function () {
+      $('#clear-filter, .clear-filter').click(function (e) {
         // Show all p and art-frame elements within .row divs
         $('.row').find('p, .art-frame, .badges').show();
         $('.clear-filter-info').hide();
         $('.btn-group .btn-check').prop('checked', false);
         addOrderMdLastToEvenArtFrames('');
+
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $(document).height()-$(window).height()},
+          1,
+          "linear"
+        );
       });
 
       // Function to change the hash in the URL
