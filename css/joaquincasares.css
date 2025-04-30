@@ -29,9 +29,14 @@ a {
     color: rgb(179, 197, 223) !important;
 }
 
-.v-center {
+.v-center,
+.logo-center {
     display: flex;
     align-items: center;
+}
+
+.logo-center {
+    justify-content: flex-end;
 }
 
 .art-frame {
@@ -123,4 +128,26 @@ a {
 ::-moz-selection {
     color: rgb(15 23 42);
     background-color: rgb(69, 173, 158);
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 300px;
+    display: block;
+    padding: 5px;
+    background-color: white;
+}
+
+.riptano {
+    width: 300px;
+}
+
+.datastax-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datastax-logos a {
+    align-self: flex-end;
 }
