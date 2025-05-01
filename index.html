@@ -195,6 +195,7 @@
         </div>
 
         <div class="h3">Experience</div>
+
         <a id="weavegrid"></a>
         <div class="row">
           <div class="col">
@@ -203,7 +204,7 @@
                 WeaveGrid
               </a>
             </div>
-            <div class="pb-2 fw-semibold">Senior Software Engineer <span class="h6">| 2024 - 2025</span></div>
+            <div class="pb-2 fw-semibold">Senior Software Engineer <span class="h6">| 2024 - Present</span></div>
             <div class="h6">
               Company Size: 85 → 89<br>
               Engineering Team: 27
@@ -218,29 +219,44 @@
         <div class="row starred python containers architecture operations observability training">
           <div class="col">
             <p>
-              Own the developer experience and
-              release pipeline
-              from within the Foundations team.
-              Supplement the Engineering team's knowledge of
+              I currently work at
+              <a class="text-decoration-none" href="https://weavegrid.com">WeaveGrid</a>
+              and was hired
+              to own Developer Experience and Release Pipeline initiatives within the
+              five-person Foundations team.
+              The team originally included two Engineers focused on
+              Infrastructure (System Reliability and Security, respectively),
+              two Engineers focused on the Data Warehouse, and myself as the DevX Engineer.
+            </p>
+            <p>
+              My primary focus is to supplement the Engineering team's knowledge of
               Docker Compose container-based services,
               Kubernetes namespace management,
               Helm deployment charts,
-              Terraform-backed infrastructure,
-              CircleCI deployment workflows,
+              Terragrunt-backed infrastructure,
+              CircleCI deployment workflows powered by an internal orb,
               Grafana monitoring and alerting dashboards,
-              OpenSearch event logging,
-              and
-              PostgreSQL database administration
-              via live Confluence wikis.
-              Standardize test data generation,
-              deliver test stability,
-              and harden workflows for
-              local development
-              and cloud deployments
-              to AWS-hosted, Python-based environments.
+              OpenSearch (formerly Kibana) event logging,
+              and Postgres/Redis database access.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-solo.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row architecture operations observability">
+          <div class="col">
+            <p>
+              My secondary responsibility is to ensure all CircleCI release pipelines
+              remain as reliable and performant as possible,
+              with the understanding that ongoing interruptions from the Engineering team
+              will take precedence in order to unblock company velocity.
             </p>
             <p>
-              Reduce local build times by 70% within 2 weeks of joining.
+              Additionally, as a formal member of the Infrastructure team,
+              I proactively take on high-urgency, Infrastructure-related tasks that
+              unblock teammates and increased team throughput.
             </p>
           </div>
           <div class="col-md-3 art-frame py-5 py-md-1 order-first">
@@ -248,7 +264,209 @@
           </div>
           <div class="col-12 order-last badges"></div>
         </div>
+        <div class="row starred python training">
+          <div class="col">
+            <p>
+              Before my first 1-on-1 with my manager, who was on paternity leave when I joined,
+              I began extracting all scriptable knowledge from our Confluence documentation
+              and built a series of automated onboarding scripts.
+            </p>
+            <p>
+              Shortly after that first meeting, I rewrote and reorganized the majority
+              of our Confluence docs to create a linear onboarding path,
+              logically group resources, and improve long-term reference clarity.
+            </p>
+            <p>
+              While Engineering Managers typically expected onboarding to take 3 to 10 days,
+              my 40-minute setup allowed new hires to complete multiple pull requests
+              within their first week.
 
+              Senior, long-tenured Engineers, and both the outgoing and incoming
+              Directors of Engineering, publicly praised the impact of this work.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-onboarding.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row operations training">
+          <div class="col">
+            <p>
+              In the same spirit of removing recurring friction, I hacked together smart
+              TablePlus connection bundles to eliminate the timesink of repeatedly
+              debugging database connection issues.
+
+              I consolidated access to all Staging, Production, Kubernetes, and Local
+              databases into a single, password-protected resource.
+            </p>
+            <p>
+              Using TablePlus' Command Line field, I invoke scripts from "hidden" fields
+              that leverage symlinks and dotfiles, with optional full logging for
+              debugging.
+
+              Engineers with active AWS SSO authentication are automatically
+              granted permissioned access to Staging and Production environments.
+
+              For Kubernetes, I open SSH tunnels through our bastion as background
+              processes to provide transparent access to their test namespaces.
+            </p>
+            <p>
+              Almost immediately, database connection issues disappeared,
+              freeing me up to improve other areas of our developer experience.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-tableplus.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row starred operations">
+          <div class="col">
+            <p>
+              My first major cross-team collaboration began when end-to-end Cypress tests
+              were being reintroduced after a 7-month hiatus.
+
+              These UI-based tests had been disabled due to long runtimes that slowed
+              release pipelines made worse by rampant failures and, even more frustratingly,
+              test flakes.
+            </p>
+            <p>
+              Although my proposed solution initially met hesitation,
+              I implemented test tagging to identify and isolate problematic tests.
+
+              By tagging tests as @nonblocking, @flaky, and @disabled,
+              I drastically reduced runtimes and improved test reliability.
+
+              While others debated the usefulness of test tagging,
+              I handled the majority of the heavy lifting, cutting
+              the average test time from 8+ minutes to 4.0 minutes and dropping the
+              flake rate from ~70 per week to just 2 every three weeks.
+            </p>
+            <p>
+              As a result, the burden on the UI team became far more manageable and
+              aligned with the Director of Engineering's post-incident request to ensure
+              basic functionality was always reliably tested before release.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-cypress.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row starred python architecture operations">
+          <div class="col">
+            <p>
+              Even after eliminating noisy integration tests, deployment-related failures
+              continued to plague 56% of our CircleCI pipelines on jobs that were
+              expected to be stable.
+
+              We defined "stable" as jobs unrelated to unit or integration tests and
+              strictly tied to deployment and operational workflows.
+
+              By tracking down a series of race conditions, I was able to eliminate all
+              failures from these jobs for a 29-day deployment window.
+            </p>
+            <p>
+              Once reliability was locked in, I shifted focus to velocity, cutting the average
+              deployment duration by 73% from 29 minutes to 7 minutes and 45 seconds.
+
+              This also dropped P95 Production deployment time from 36 minutes to 11 minutes.
+            </p>
+            <p>
+              With reliability and speed in place, release trains stopped being interrupted
+              by new release candidates and Engineers no longer faced 3-hour delays to ship.
+
+              Instead, Engineers are regularly @mentioning teammates to approve release
+              candidates so they could continuously deliver fixes and features to Production.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-circleci.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row containers operations observability">
+          <div class="col">
+            <p>
+              As developer experience improved and release safety was strengthened
+              through queued deployments to Production,
+              I shifted focus to efforts aimed at improving security posture
+              and system resilience like EKS upgrades and enabling Redis Cluster Mode.
+
+              While EKS upgrades were relatively low-touch beyond updating a few
+              Kubernetes add-ons, the Redis migrations were more involved.
+            </p>
+            <p>
+              Redis migrations required auditing service code across teams,
+              deploying pre-migration changes,
+              defining new Kubernetes environment variables,
+              creating load tests to validate stability,
+              and delivering new dashboards with integrated runbooks to support future
+              debugging efforts.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-redis.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row architecture operations observability">
+          <div class="col">
+            <p>
+              Due to compliance requirements, shifting workloads,
+              and scheduled paid time off, I was tasked mid-sprint with creating an
+              automated, cross-service uptime tracking project to surface reliability
+              gaps in our Production system.
+
+              These checks needed to run outside of our internal infrastructure,
+              span all Engineering teams, and alert on failures.
+
+              Within a few days, I delivered a working setup using CircleCI Triggers and
+              Cypress Cloud testing.
+            </p>
+            <p>
+              The design allowed each team to quickly integrate tests from their own
+              repositories while consolidating runtime data into a single, isolated repository.
+
+              Test runs were properly queued with timeouts to avoid overlap,
+              alerted to Slack as a first line of defense,
+              and exported metrics for easy downstream consumption before handing ownership back to
+              the Engineer responsible for the project.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-uptime.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
+        <div class="row starred containers operations training">
+          <div class="col">
+            <p>
+              Throughout my time, I continuously gather feedback from our team of 27
+              Engineers to improve Infrastructure-related surfaces, ranging from
+              local development with Docker Compose and Kubernetes developer tooling
+              to documentation in Confluence and developer experience metrics.
+            </p>
+            <p>
+              I also focus on release safety, stability, and velocity across our
+              CircleCI and Cypress Cloud pipelines based on daily pipeline activity
+              instead of solely formal requests.
+            </p>
+            <p>
+              Because this work is driven organically and prioritized based on visible,
+              high-impact needs, escalation to the Project Manager is rarely necessary.
+            </p>
+            <p>
+              Based on survey results, improvements to Developer Experience within my
+              first six months directly contributed to employee retention in at least one case.
+            </p>
+          </div>
+          <div class="col-md-3 art-frame py-5 py-md-1 order-first">
+            <img class="art w-100" src="imgs/weavegrid-pm.png">
+          </div>
+          <div class="col-12 order-last badges"></div>
+        </div>
 
         <a id="axonops"></a>
         <div class="row">
@@ -660,7 +878,7 @@
               I was part of the three-person Architecture team consisting of the Chief
               Architect, the Senior Data Scientist, and myself. Under minimal guidance from the Chief Architect, I
               developed
-              an asynchronous API written in Python which relied on Apache Cassandra, Amazon DynamoDB, and PostgreSQL
+              an asynchronous API written in Python which relied on Apache Cassandra, Amazon DynamoDB, and Postgres
               that
               increased processing speed by more than 3x while reducing costs by 50%.
             </p>
