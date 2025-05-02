@@ -136,18 +136,30 @@ a {
     display: block;
     padding: 5px;
     background-color: white;
-}
-
-.riptano {
-    width: 300px;
+    width: 100%;
 }
 
 .datastax-logos {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: end;
 }
 
 .datastax-logos a {
     align-self: flex-end;
+}
+
+.datastax-logos img {
+    justify-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .logo-center {
+        justify-content: center;
+    }
+
+    .datastax-logos img {
+        justify-self: anchor-center;
+    }
 }
